@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tailwind</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+    
+    <div class="bg-green-500 px-56 pb-5">
+        <div class="">
+            <h1 class="text-center text-5xl">GreeksforGreeks Survey Form</h1> 
+        </div>
+    
+    <form class="bg-white mt-10 mb-10 px-3">
+        <div class="py-10 px-8 space-y-3" >                
+                <label class="block">Name</label>
+                <input type="name" placeholder="First Name" name="name" class="border border-slate-500 rounded-lg placeholder-slate-300 pl-3 py-2 text-sm w-full ">            
+                
+                <label class="block ">Email</label>
+                <input type="email" name="text" placeholder="Enter your email" name="email" class="border border-slate-500 rounded-lg placeholder-slate-300 pl-3 py-2 text-sm w-full">
+            
+                <label class="block ">Age</label>
+                <input type="number" name="text" placeholder="Enter your age" name="age" class="border border-slate-500 rounded-lg placeholder-slate-300 placeholder:italic pl-3 py-2 text-sm w-full">
+            
+                <label class="block">Which option best describes you?</label>
+                <select class="border border-slate-500 rounded-lg placeholder-slate-300 placeholder:italic pl-3 text-sm w-11/12">
+                    <option>Please Select</option>
+                    <option>Student</option>
+                </select>
+            
+        <div>
+            <label class="block">Would you recommended GeeksforGeeks to a friend?</label>
+                <input type="radio"> Yes <br>
+                <input type="radio"> No <br>
+                <input type="radio"> Maybe 
+        </div>
+
+        <div>
+            <label>Langauges and Frameworks known </label>
+            <small>(check all that apply) </small> <br>                    
+                <input type="checkbox" >  C++ <br>
+                <input type="checkbox" >  C# <br>
+                <input type="checkbox" >  Java <br>
+                <input type="checkbox" >  Python <br>
+                <input type="checkbox" >  JavaScript <br>
+                <input type="checkbox" >  React <br>
+                <input type="checkbox" >  Angular <br>
+                <input type="checkbox" >  Django <br>
+                <input type="checkbox" >  Spring <br>
+        </div>
+            <label for="message" class="block"> Any comment or suggestions</label>
+                <textarea rows="4" placeholder="write something..." class="border border-slate-500 rounded-lg w-full px-4 py-2 placeholder:italic"></textarea>
+            <input type="submit"  class="w-full bg-green-500 border border-slate-500">
+            
+        </div>
+    </form>
+    </div>
+</body>
+</html>
